@@ -10,6 +10,9 @@ public class ListsController
 
 	private List<Kahoot> myKahoots;
 	private ListsDisplay popup;
+	/*
+	 * "ListsDisplay" must be changed to "PopupDisplay"
+	 */
 //	private List<Kahoot> mySecondKahoot;
 	
 	public ListsController()
@@ -63,4 +66,18 @@ public class ListsController
 		myKahoots.add(0, removed);
 		
 	} 
+
+	public ListsDisplay getPopup()
+	{
+		return popup;
+		/*
+		 * "ListsDisplay" must be changed to "PopupDisplay"
+		 */
+	}
+	
+	public ArrayList<Kahoot> getMyKahoots()
+	{
+		return (ArrayList<Kahoot>) myKahoots;
+	}
+
 }

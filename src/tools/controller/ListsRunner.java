@@ -1,4 +1,4 @@
-package lists.controller;
+package tools.controller;
 
 public class ListsRunner
 {

@@ -1,9 +1,10 @@
-package lists.controller;
+package tools.controller;
 
 import java.util.List;
 import java.util.ArrayList;
-import lists.model.Kahoot;
-import lists.view.ListsDisplay;
+
+import tools.model.Kahoot;
+import tools.view.ListsDisplay;
 
 public class ListsController
 {

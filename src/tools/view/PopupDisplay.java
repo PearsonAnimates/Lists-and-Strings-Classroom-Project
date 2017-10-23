@@ -2,7 +2,7 @@ package tools.view;
 
 import javax.swing.JOptionPane;
 
-public class ListsDisplay
+public class PopupDisplay
 {
 
 	public void displayText(String textToDisplay)

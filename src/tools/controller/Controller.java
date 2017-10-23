@@ -4,22 +4,22 @@ import java.util.List;
 import java.util.ArrayList;
 
 import tools.model.Kahoot;
-import tools.view.ListsDisplay;
+import tools.view.PopupDisplay;
 
-public class ListsController
+public class Controller
 {
 
 	private List<Kahoot> myKahoots;
-	private ListsDisplay popup;
+	private PopupDisplay popup;
 	/*
 	 * "ListsDisplay" must be changed to "PopupDisplay"
 	 */
 //	private List<Kahoot> mySecondKahoot;
 	
-	public ListsController()
+	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
-		popup = new ListsDisplay();
+		popup = new PopupDisplay();
 //		mySecondKahoot = new ArrayList<Kahoot>();
 	}
 	
@@ -30,6 +30,20 @@ public class ListsController
 		fillTheList();
 		showTheList();
 		changeTheList();
+	}
+	
+	public int findMaxLength(ArrayList<String> myList)
+	{
+		int min = Integer.MAX_VALUE;
+		
+		for(int index = 0; index < myList.size(); index++)
+		{
+			if(myList.get(index).length() < min)
+			{
+				min = myList.get(index).length();
+			}
+		}
+		return min;
 	}
 	
 	private void showTheList()
@@ -68,7 +82,7 @@ public class ListsController
 		
 	} 
 
-	public ListsDisplay getPopup()
+	public PopupDisplay getPopup()
 	{
 		return popup;
 		/*
